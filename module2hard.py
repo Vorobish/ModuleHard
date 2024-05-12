@@ -9,6 +9,3 @@ for i in range(1, n):
             result += str(i)+str(j)
 print(f'Шифр для числа {n}: {result}')
 
-
-
-
