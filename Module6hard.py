@@ -5,7 +5,7 @@ class Figure:
     sides_count = 0
     name = 'фигура'
 
-    def __init__(self, sides_count, sides, color):  # filled(закрашенный, bool)
+    def __init__(self, sides_count, sides, color):  
         if self.__is_valid_sides(len(sides)):
             self.__sides = list(sides)
         else:
