@@ -1,11 +1,11 @@
 from math import sqrt
-
+from math import pi
 
 class Figure:
     sides_count = 0
     name = 'фигура'
 
-    def __init__(self, sides_count, sides, color):  
+    def __init__(self, sides_count, sides, color):
         if self.__is_valid_sides(len(sides)):
             self.__sides = list(sides)
         else:
@@ -65,11 +65,11 @@ class Circle(Figure):
         return self.P
 
     def get_r(self):
-        self.__radius = int(self.__sides[0]) / 6.28
+        self.__radius = int(self.__sides[0]) / (2 * pi)
         return self.__radius
 
     def get_square(self):
-        self.S = 3.14 * self.__radius ** 2
+        self.S = pi * self.__radius ** 2
         return self.S
 
     def set_sides(self, *sides):
@@ -212,7 +212,3 @@ print(cube1.get_volume())
 
 circle1.say_info()
 cube1.say_info()
-
-
-
-
